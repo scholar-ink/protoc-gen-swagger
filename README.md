@@ -48,7 +48,7 @@ message SendMsgRequest{
 protoc --micro_out=. --go_out=. --swagger_out=. *.proto
 ```
 
-##添加dep，并dep ensure
+## 添加dep，并dep ensure
 
 ```yaml
 [[constraint]]
