@@ -11,7 +11,7 @@ go get -u github.com/scholar-ink/protoc-gen-swagger
 下载http://cdn.udian.me/rpc/google/api.zip 并解压到/usr/local/Cellar/protobuf/3.5.1_1/include/google/api 目录下 （版本不同自行修改）
 ## 修改proto 文件
 
-1. 引入google api
+1. proto引入google api
 ```protobuf
 import "google/api/annotations.proto";
 ```
@@ -21,6 +21,7 @@ import "google/api/annotations.proto";
 syntax = "proto3";
 option go_package = "common";  //设置go包名，与proto文件名一致
 package retail.api.v1.common;
+import "google/api/annotations.proto";
 //商品-分类    --yapi 目录名称
 service Common {
     //发送短信            --接口名称
