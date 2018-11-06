@@ -61,10 +61,8 @@ protoc --micro_out=. --go_out=. --swagger_out=. *.proto
 
 ```bash
 cd $WORKSPACE
-time=$(date -d "-2 min" +"%Y-%m-%d %H:%M:%S")
-echo $time
 checkModify(){
-    std=$(git log --pretty=oneline --after="$time" $1)
+    std=$(git log --pretty=oneline --after=5.minute.ago $1)
     if [ -n "$std" ]; then
         return 1;
     else
