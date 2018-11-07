@@ -13,7 +13,7 @@ import (
 	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
 	"github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
 	gen "github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/generator"
-	swagger_options "github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger/options"
+	swagger_options "github.com/scholar-ink/protoc-gen-swagger/options"
 )
 
 var (
