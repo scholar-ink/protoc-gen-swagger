@@ -3,19 +3,19 @@
 
 ### 下载proto
 
-##### 更新 protobuf 源码
+##### 1.更新 protobuf 源码
 ```go
 go get github.com/protocolbuffers/protobuf/{proto,protoc-gen-go}
 ```
-##### 下载micro protobuf插件protoc-gen-micro
+##### 2.下载micro protobuf插件protoc-gen-micro
 ```go
 go get github.com/micro/protoc-gen-micro
 ```
-##### 下载swagger protobuf插件protoc-gen-swagger
+##### 3.下载swagger protobuf插件protoc-gen-swagger
 ```sh
 go get -u github.com/scholar-ink/protoc-gen-swagger
 ```
-### 下载google定义文件
+##### 4.下载google定义文件
 下载http://cdn.udian.me/rpc/google/api.zip 并解压到/usr/local/Cellar/protobuf/3.5.1_1/include/google/api 目录下 （版本不同自行修改）
 
 # 开始使用
